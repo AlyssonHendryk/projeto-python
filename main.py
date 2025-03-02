@@ -15,12 +15,12 @@ df_sorted = df.sort_values(by="Launched Price (USA)", ascending=False)
 plt.figure(figsize=(12, 6))
 sns.barplot(x=df_sorted['Company Name'], y=df_sorted['Launched Price (USA)'])
 
-# Melhorar a visualização
-plt.xticks(rotation=90)  # Rotacionar rótulos para evitar sobreposição
+
+plt.xticks(rotation=90)  
 plt.title("Preço de Lançamento por Marca")
 plt.xlabel("Marcas")
 plt.ylabel("Preço (USD)")
-plt.grid(axis="y", linestyle="--", alpha=0.7)  # Adicionar linhas de grade para melhor leitura
+plt.grid(axis="y", linestyle="--", alpha=0.7)  
 
-# Mostrar o gráfico
+
 plt.show()
