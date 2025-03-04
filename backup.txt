@@ -1,0 +1,18 @@
+print(df.head())
+
+plt.figure(figsize=(10, 5))
+#gráfico de barras
+#sns.barplot(x=df['Company Name'], y=df['Launched Price (USA)'])
+sns.barplot(x=df['Company Name'], y=df['Launched Price (USA)']) 
+
+#grafico de dispersao
+#sns.scatterplot(x=df['Model Name'], y=df['RAM'])
+
+##Gráfico de linha: sns.lineplot(x=df['Data'], y=df['Valor'])
+#Histograma: sns.histplot(df['Valor'], bins=10)
+
+plt.xticks(rotation=180)
+plt.title("alguma coisa")
+plt.xlabel("Marcas")
+plt.ylabel("Preço")
+plt.show()
